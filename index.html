@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>HTML Skeleton</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Your styles should be called here -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+      <h1> Do You Need an Unlimited Metro Pass?</h1>
+      <img src="images/subway-unsplash.jpg" />
+      <p class="photo-source"> Photo Credit: Asael Peña, Unsplash </p>
+
+      <form class="box1">
+
+        <h2> How Do You Prefer To Commute? </h2>
+
+        <select class="filter">
+          <option value="mode">None Selected</option>
+          <option value="train">Train</option>
+          <option value="bus">Bus</option>
+          <option value="cab">Cab</option>
+          <option value="car">Personal Vehicle</option>
+        </select>
+
+      </form>
+
+      <form class="box2">
+
+        <h2> How Often Do You Use These Modes of Transportation? </h2>
+
+        <p>Train:
+          <input type="number" class="Train" min="0" />
+        </p>
+        <p>Bus:
+          <input type="number" class="Bus" min="0" />
+        </p>
+        <p>Cab:
+          <input type="number" class="Cab" min="0" />
+        </p>
+        <p>Personal Vehicle:
+          <input type="number" class="Car" min="0" />
+        </p>
+
+      </form>
+
+      <form class="box3">
+        <h2> How Long Is Your Commute?</h2>
+
+        <input type="radio" name="time"> 15 minutes </input> <br>
+        <input type="radio" name="time"> 16-30 minutes </input> <br>
+        <input type="radio" name="time" checked> 31-45 minutes </input><br>
+        <input type="radio" name="time"> 46 minutes-1 hour </input><br>
+        <input type="radio" name="time"> Over one hour </input><br>
+      </form>
+
+    </div>
+
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Your javascript should be called here -->
+  </body>
+
+</html>
